@@ -59,7 +59,7 @@
 <!-- Tutorial:  https://texteffects.dev/posts/flickering-text-effect -->
 
 <div>
-	<h1 class="text" data-flicker="i" contenteditable>
+	<h1 class="text" data-flicker="i">
 		Flicker
 	</h1>
 	<span class="text" aria-hidden="true">i</span>
@@ -71,13 +71,6 @@
 https://codepen.io/mandymichael/pen/OJGjXgO
 -->
 
-<fieldset>
-	<label for="flickerLetter">Letter</label>
-	<input type="text" id="flickerLetter" />
-	
-	<label for="flickerLetter">Offset</label>
-	<input type="text" id="flickerPosition" />
-</fieldset>
 <script>
 const letter = document.getElementById("flickerLetter");
 const offset = document.getElementById("flickerPosition");

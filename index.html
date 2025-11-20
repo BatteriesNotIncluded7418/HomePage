@@ -88,6 +88,13 @@
             font-size: 1.1rem;
             margin-top: 5px;
         }
+        
+        #cycleText {
+    display: inline-block;
+    height: 5rem; /* match your h1 font-size */
+    line-height: 5rem;
+}
+
     </style>
 
 </head>
@@ -127,7 +134,7 @@ let index = 0;
 setInterval(() => {
     index = (index + 1) % words.length;  
     document.getElementById("cycleText").textContent = words[index];
-}, 1500); // change word every 1.5 seconds
+}, 3000); // change word every 1.5 seconds
 
 
 letter.addEventListener("input", function() {
